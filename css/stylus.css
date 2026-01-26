@@ -81,7 +81,7 @@ body {
 
 .hero-card {
   border-radius: 20px;
-  background: rgba(118, 61, 171, 0.222);
+  background: rgba(67, 36, 97, 0.222);
   max-width: 900px;
   min-height: 150px;
   min-width: 100px;
@@ -152,8 +152,8 @@ body {
   padding: 40px 20px;
   margin-top: 20vh;
   border-radius: 20px;
-  background: rgba(118, 61, 171, 0.222);
-  border-bottom: 1px solid rgba(99, 51, 143, 0.222);
+  background: rgba(67, 36, 97, 0.222);
+  border: 1px solid rgba(99, 51, 143, 0.222);
   margin-bottom: 6vh;
 }
 
