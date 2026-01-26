@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin Khuu | Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="css/stylus.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">K.khuu</div>
+  <div style="display: flex; align-items: center; gap: 24px;">
+    <nav class="top-nav" id="navMenu">
+      <a href="https://github.com/KevinKhuu01" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="pages/Projects/index.html"><i class="fa fa-code"></i> Projects</a>
+      <a href="pages/Contact/index.html"><i class="fas fa-paper-plane"></i> Contact</a>
+    </nav>
+    <a href="https://github.com/KevinKhuu01" target="_blank" style="font-size: 1.4em; color: white;"><i class="fab fa-github"></i></a>
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="hero" data-aos="zoom-in">
+  <div class="hero-card">
+      <h1 class="hero-name">Kevin Khuu</h1>
+      <p class="hero-title">Honours Computer Science - Specialization in Data Science Student - Year 2</p>
+  </div>
+
+  <div class="about hero-card">
+    <h2>About me</h2>
+    I'm a second year student studying at the Ontario Tech University. After working in a professional environment for 4 years, I decided to pursue my dream of becoming a computer scientist and programmer. For hobbies, I enjoy watching movies, listening to music, running, weight lifting, sports, and puzzles. I am currently learning Java, C#, Oracle SQL, Javascript, CSS, and HTML.
+  </div>
+
+  <div class="hero-card-picture">    
+    <img src="images/profile-picture.jpg" alt="Kevin Khuu" class="hero-image"/>
+  </div>
+</section>
+
+<section class="projects" data-aos="fade-up" data-aos-offset="200">
+  <h2>Projects</h2>
+
+  <div class="project-button" data-aos="fade-up">
+    <h3>Termux-HandBook</h3>
+    <p>Learn Using Termux Commands Lessonwise.</p>
+    <div class="project-meta">
+      <span class="status-label">✅ Completed</span>
+      <a href="https://termux-handbook.vercel.app/" target="_blank" class="github-link">
+        Web Link
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="project-button" data-aos="fade-up">
+    <h3>Insta Video Downloader</h3>
+    <p>Download videos from Instagram via our website.</p>
+    <div class="project-meta">
+      <span class="status-label">✅ Completed</span>
+      <a href="https://reelsaver.veecel.app/" target="_blank" class="github-link">
+        Web Link
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="explore-projects" data-aos="zoom-in">
+    <a href="/pages/Projects">
+      Explore All Projects
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="explore-projects" data-aos="zoom-in">
+    <a href="/pages/">
+      Explore All Pages
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="/" class="nav-btn"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="/pages/Projects" class="nav-btn"><i class="fas fa-code"></i><span>Projects</span></a>
+    <a href="/pages/Contact" class="nav-btn"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    <a href="/pages/" class="nav-btn"><i class="fas fa-th-list"></i><span>Pages</span></a>
+  </nav>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      navMenu.classList.remove('active');
+    }
+  });
+
+// Force scroll to top on page load
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
+// Also on page refresh
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
+</script>
+
+</body>
+</html>
