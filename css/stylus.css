@@ -13,7 +13,7 @@ body {
   padding-bottom: 80px;
   overflow-x: hidden;
   background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%235d2e8a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%235d2e8a' fill-opacity='0.33' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   background-attachment: fixed;
 }
 
@@ -28,9 +28,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: rgba(118, 61, 171, 0.222);
+  background: rgba(28, 12, 44, 0.645);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(99, 51, 143, 0.222);
+  border-bottom: 1px solid rgba(57, 26, 86, 0.222);
   z-index: 1000;
 }
 
@@ -146,7 +146,8 @@ body {
 
 /* Projects Section */
 .projects {
-  max-width: 1300px;
+  max-width: 1250px;
+  width: 95%;
   margin: auto;
   padding: 40px 20px;
   margin-top: 20vh;
@@ -258,7 +259,8 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  background: rgb(24, 11, 36);
+  background: rgba(28, 12, 44, 0.645);
+  backdrop-filter: blur(20px);
   border-top: 1px solid rgba(57, 26, 86, 0.222);
   padding: 15px 0;
   z-index: 1000;
@@ -291,7 +293,7 @@ body {
 }
 
 /* Mobile view */
-@media (max-width: 899px) {
+@media (max-width: 1023px) {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -359,12 +361,12 @@ body {
 
   .projects {
     margin-top: 5vh;
-    width: 100%;
+    width: 95%;
     max-width: 500px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: unset;
     padding: 15px 20px;
+    margin-left: auto;
+    margin-right: auto; 
   }
 
   .projects h2 {
@@ -409,7 +411,7 @@ body {
 }
 
 /* Desktop view */
-@media (min-width: 900px) {
+@media (min-width:1024px){
   .hero {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -419,6 +421,8 @@ body {
     margin: auto;
     margin-top: 10vh;
     gap: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
   }
 
   .hero-card-picture {
