@@ -16,6 +16,7 @@ body {
 
 }
 
+
 /* Header Styles */
 .site-header {
   position: fixed;
@@ -149,11 +150,11 @@ body {
   width: 95%;
   margin: auto;
   padding: 40px 20px;
-  margin-top: 21vh;
+  margin-top: 5vh;
   border-radius: 20px;
   background: rgba(73, 38, 108, 0.301);
   border: 1px solid rgba(99, 51, 143, 0.222);
-  margin-bottom: 6vh;
+  margin-bottom: 4%;
 }
 
 .projects h2 {
@@ -358,7 +359,7 @@ body {
   }
 
   .projects {
-    margin-top: 5vh;
+    margin-top: 3vh;
     width: 95%;
     max-width: 500px;
     min-width: unset;
@@ -406,6 +407,10 @@ body {
   .about {
     font-size: 0.95rem;
   }
+
+  .scroll-down {
+    display: none;
+  }
 }
 
 /* Desktop view */
@@ -431,4 +436,32 @@ body {
   .project-button {
     max-width: 100%;
   }
+
+.hero {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+}
+
+.scroll-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00f2ff;
+  border-radius: 50%;
+  color: #00f2ff;
+  font-size: 1.5em;
+  text-decoration: none;
+  background: rgba(0, 242, 255, 0.1);
+  animation: bounce 2s infinite;
+}
 }
