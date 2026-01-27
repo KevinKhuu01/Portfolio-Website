@@ -6,7 +6,7 @@
   <title>Projects | Kevin Khuu</title>
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/Favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="Favicon/android-chrome-512x512.png" sizes="512x512" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
@@ -16,7 +16,7 @@
   <style>
     .projects-page {
       max-width: 900px;
-      margin: 120px auto 40px;
+      margin: 75px auto 40px;
       padding: 0 20px;
       text-align: center;
     }
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-    <!-- Project 2 -->
+  <!-- Project 2 -->
   <div class="project-button" data-aos="fade-up">
     <h3>Internal Banking Accounts</h3>
     <p>C# Practice - Intermediate level</p>
@@ -89,7 +89,33 @@
   </div>
 
   <!-- Project 3 -->
+  <div class="project-button" data-aos="fade-up">
+    <h3>PokeAPI Pokedex</h3>
+    <p>JavaScript Practice - Intermediate level</p>
+    <div class="project-meta">
+      <a href="https://github.com/KevinKhuu01/JavaScript-API-Practice-Pokedex" target="_blank" class="github-link">GitHub Respository</a>
+      <a href="https://kevinkhuupokedex.netlify.app/" target="_blank" class="github-link">Web Link</a>
+    </div>
+  </div>
 
+  <!-- Project 4 -->
+  <div class="project-button" data-aos="fade-up">
+    <h3>Static Website Build</h3>
+    <p>HTML/CSS Practice - Beginner level</p>
+    <div class="project-meta">
+      <a href="https://github.com/KevinKhuu01/HTML-CSS-Static-Website" target="_blank" class="github-link">GitHub Respository</a>
+      <a href="https://kevinkhuustaticwebsite.netlify.app//" target="_blank" class="github-link">Web Link</a>
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="project-button" data-aos="fade-up">
+    <h3>Portfolio Website</h3>
+    <p>HTML/CSS/JS - Intermediate level</p>
+    <div class="project-meta">
+      <a href="https://github.com/KevinKhuu01/Portfolio-Website" target="_blank" class="github-link">GitHub Respository</a>
+    </div>
+  </div>
 
 </main>
 
@@ -126,6 +152,16 @@
       navMenu.classList.remove("active");
     }
   });
+
+  // Force scroll to top on page load
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
+// Also on page refresh
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
 </script>
 </body>
 <!-- Made by @pyKinsu | https://github.com/pyKinsu/ -->
