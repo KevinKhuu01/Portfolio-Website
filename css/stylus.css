@@ -154,7 +154,7 @@ body {
   border-radius: 20px;
   background: rgba(73, 38, 108, 0.301);
   border: 1px solid rgba(99, 51, 143, 0.222);
-  margin-bottom: 4%;
+  margin-bottom: 0.5%;
 }
 
 .projects h2 {
@@ -422,7 +422,7 @@ body {
     align-items: stretch;
     max-width: 1300px;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 7vh;
     gap: 5vh;
     padding-left: 3vh;
     padding-right: 3vh;
