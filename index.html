@@ -48,22 +48,30 @@
   </div>
 </section>
 
-<section id="projects" class="projects" data-aos="fade-up" data-aos-offset="200">
+<section id="projects" class="projects" data-aos="fade-up">
   <h2>Projects</h2>
 
   <div class="project-button" data-aos="fade-up">
-    <h3>Internal Banking Accounts</h3>
-    <p>C# Practice - Intermediate level</p>
-            <p>Description coming soon</p>
+    <h3>Internal Banking Accounts</h3><br/>
+    <p><i>C# Practice - Intermediate level</i></p>
+    <p class="project-description">
+      Description:<br>
+      This project was built for C# programming assignment to simulate basic banking functionality.
+      <br><br>Concepts:<br>
+      Object-oriented design, exception handling, data structures, method overrides and encapsulation.<br></p>
     <div class="project-meta">
       <a href="https://github.com/KevinKhuu01/Practice-Banking-System" target="_blank" class="github-link">GitHub Respository</a>
     </div>
   </div>
 
     <div class="project-button" data-aos="fade-up">
-    <h3>PokeAPI Pokedex</h3>
-    <p>JavaScript Practice - Intermediate level</p>
-        <p>Description coming soon</p>
+    <h3>PokeAPI Pokedex</h3><br/>
+    <p><i>JavaScript Practice - Intermediate level</i></p>
+    <p class="project-description">
+      Description:<br>
+      This pokedex practice project focuses on fetching and manipulating external API data. 
+      <br><br>Concepts:<br>
+      Fetching and manipulating data from REST APIs, asynchronous functions (fetch, async/await), and dynamic DOM elements generation, handling user interactions (search, click, display details)<br></p>
     <div class="project-meta">
       <a href="https://github.com/KevinKhuu01/JavaScript-API-Practice-Pokedex" target="_blank" class="github-link">GitHub Respository</a>
       <a href="https://kevinkhuupokedex.netlify.app/" target="_blank" class="github-link">Web Link</a>
@@ -72,18 +80,8 @@
 
 
   <div class="explore-projects" data-aos="zoom-in">
-    <a href="pages/Projects/index.html">
+    <a href="pages/Projects/index.html" class="explore-btn">
       Explore All Projects
-      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"/>
-      </svg>
-    </a>
-  </div>
-
-  <div class="explore-projects" data-aos="zoom-in">
-    <a href="pages/">
-      Explore All Pages
       <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -97,7 +95,6 @@
     <a href="index.html" class="nav-btn"><i class="fas fa-home"></i><span>Home</span></a>
     <a href="pages/Projects/index.html" class="nav-btn"><i class="fas fa-code"></i><span>Projects</span></a>
     <a href="pages/Contact/index.html" class="nav-btn"><i class="fas fa-envelope"></i><span>Contact</span></a>
-    <a href="pages/index.html" class="nav-btn"><i class="fas fa-th-list"></i><span>Pages</span></a>
   </nav>
 </footer>
 
@@ -134,14 +131,19 @@ if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 }
 
+// Scroll button
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const headerOffset = 220; // Adjust this value for header height
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
     }
   });
