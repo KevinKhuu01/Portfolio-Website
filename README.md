@@ -2,8 +2,8 @@ Welcome to my portfolio website!
 
 🚀 Live Demo – https://kevinkhuuportfolio.netlify.app/
 
-<br>
-🛠️ Stack
+
+##🛠️ Stack
 
 HTML – Page structure and content.
 
