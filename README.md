@@ -2,8 +2,8 @@ Welcome to my portfolio website!
 
 🚀 Live Demo – https://kevinkhuuportfolio.netlify.app/
 
-
-##🛠️ Stack
+<br>
+🛠️ Stack
 
 HTML – Page structure and content.
 
@@ -21,9 +21,9 @@ JavaScript - Importing Data-AOS library and managing special effects (scroll but
 🧠 Concepts<br>
 1. Animation styling with Data-AOS.<br>
 2. CSS - Screen adaptable layout, styling, and design. <br>
-3. HTML - Structure and content.
+3. HTML - Structure and content.<br>
 
-<br><br>
+<br>
 📝 Notes<br>
 1. Website In progress - Template created by Kinsu Rajput (@pykinsu).<br>
 2. This is a static front-end-only site — no backend server or database involved.<br>
