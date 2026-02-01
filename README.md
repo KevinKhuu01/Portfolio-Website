@@ -3,25 +3,17 @@ Welcome to my portfolio website!
 🚀 Live Demo – https://kevinkhuuportfolio.netlify.app/
 
 <br>
-🛠️ Stack
-
-HTML – Page structure and content.
-
-CSS – Layout, visual design, and styling.
-
-Visual Studio Code - IDE
-
-Github - Version control 
-
-Netlify - Webpage Host
-
-JavaScript - Importing Data-AOS library and managing special effects (scroll button)
+🛠️ Stack <br>
+- Languages: HTML, CSS, JavaScript <br>
+- IDE: Visual Studio Code <br>
+- Tools: Github, Netlify <br>
+- Librarys: Data-AOS <br>
 
 <br>
 🧠 Concepts<br>
-1. Animation styling with Data-AOS.<br>
-2. CSS - Screen adaptable layout, styling, and design. <br>
-3. HTML - Structure and content.<br>
+- Animation styling with Data-AOS.<br>
+- CSS: Screen adaptable layout, styling, and design. <br>
+- HTML: Structure and content.<br>
 
 <br>
 📝 Notes<br>
