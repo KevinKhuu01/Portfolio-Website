@@ -1,6 +1,6 @@
 Welcome to my portfolio website!
 
-<br><br>
+<br>
 
 🚀 Live Demo – https://kevinkhuuportfolio.netlify.app/
 
@@ -20,14 +20,14 @@ Netlify - Webpage Host
 
 JavaScript - Importing Data-AOS library and managing special effects (scroll button)
 
-<br><br>
+<br>
 
 🧠 Concepts
 1. Animation styling with Data-AOS.
 2. CSS - Screen adaptable layout, styling, and design. 
 3. HTML - Structure and content.
 
-<br><br>
+<br>
 
 📝 Notes
 1. Website In progress - Template created by Kinsu Rajput (@pykinsu).
