@@ -7,7 +7,7 @@
 - Languages: HTML, CSS, JavaScript <br>
 - IDE: Visual Studio Code <br>
 - Tools: Github, Netlify <br>
-- Librarys: Data-AOS <br>
+- Libraries: Data-AOS <br>
 
 <br>
 🧠 Concepts<br>
